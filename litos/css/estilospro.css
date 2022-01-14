@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: #DFE6EC;
+}
+table {
+    font-family: 'Raleway', sans-serif;
+    border:1px; 
+    border: solid; 
+    text-align:left;
+}
+td{
+    font-size:20px;}
+.cd{
+    height:35px;
+ font-size:20px}
+ /* CSS */
+ .bt1 {
+   font-family: 'Raleway', sans-serif;
+   background-color: #0a6bff;
+   box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 ;
+   box-sizing: border-box;
+   color: #fff;
+   font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 24px;
+   margin: 10;
+   padding: 16px 20px;
+   position: relative;
+   text-align: center;
+ }
+ .bt1 {
+    font-family: 'Raleway', sans-serif; 
+    background-color: #0a6bff;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 10;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+  } .bt2 {
+    font-family: 'Raleway', sans-serif;
+    background-color: #8b3535;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 10;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+  }
+ 
+ #precios span,
+    .precios-tabla span {
+        padding: 2px 4px;
+        display: inline-block;
+        background-color: #0275d8;
+        color: #fff;
+        border-radius: 5px;
+        font-size: small;
+        margin: 2.5px;
+        transition: .25s;
+        cursor: pointer;
+    }
+    #precios span:before,
+    .precios-tabla span:before {
+        content: 'S/. ';
+    }
+    #precios span:hover {
+        background-color: #d9534f;
+    }
+    #precio {
+        padding: 5px;
+        margin: 2.5px;
+        outline: none;
+        width: 50px;
+    }
+    #precio::-webkit-inner-spin-button, 
+    #precio::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    #addPrice {
+        padding: 5px;
+        margin: 2.5px;
+        background-color: #5cb85c;
+        border: 1px solid #5cb85c;
+        color: #fff;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
+    .fa-edit, .fa-trash {
+        padding: 5px 10px;
+        background: grey;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: unset;
+        font-size: small;
+    }
+    .fa-edit {
+        background: #f0ad4e;
+    }
+    .fa-trash {
+        background: #d9534f;
+    }

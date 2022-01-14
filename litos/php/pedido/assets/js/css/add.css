@@ -1,0 +1,56 @@
+#add {
+    max-width: 480px;
+    margin: 5px auto;
+}
+#add input,
+#add select,
+#add textarea {
+    padding: 5px 10px;
+    font-size: medium;
+    border: 2px solid var(--gris);
+    border-radius: 5px;
+    margin: 5px auto;
+    background-color: var(--blanco);
+    resize: none;
+}
+#add input[type="number"]:focus,
+#add textarea:focus {
+    border: 2px solid var(--verde);
+    box-shadow: 0 0 5px var(--verde);
+}
+
+/* Estilo según input */
+#add input[type="file"] {
+    border-style: dotted;
+    width: 75%;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px auto;
+}
+#add textarea {
+    width: 100%;
+}
+#add input[type="number"] {
+    width: calc(50% - 3px);
+}
+#add select {
+    width: calc(50% - 3px);
+    background-color: var(--celeste);
+    border-color: var(--celeste);
+    color: var(--blanco);
+}
+#add input[type="submit"],
+#add input[type="reset"] {
+    margin: 5px auto;
+    cursor: pointer;
+}
+#add input[type="submit"] {
+    background-color: var(--verde);
+    border-color: var(--verde);
+    color: var(--blanco);
+}
+#add input[type="reset"] {
+    background-color: var(--rojo);
+    border-color: var(--rojo);
+    color: var(--blanco);
+}

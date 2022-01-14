@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-image: linear-gradient(144deg,#4fa6ee, #5B42F3 50%,#f75c5c);*/
+    background-color: #181818;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+table {
+    height: 100vh;
+}
+
+table img {
+    margin-left: 20px;
+}
+
+.lb1{
+    color: #DFE6EC;
+    font-family: 'Raleway', sans-serif;
+    border:1px;
+    font-size: 20px;
+}
+table td {
+    padding: 5px 10px;
+}
+.no-margin {
+    padding: 0;
+}
+table .fa-user {
+    background: #ffffff44;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: larger;
+    color: #fff;
+}
+table .name {
+    background-color: #ffffff44;
+    border-radius: 5px;
+    width: max-content;
+    padding: 5px 10px;
+    color: #fff;
+
+    display: block;
+    font-size: medium;
+}
+table .username {
+    color: #fff;
+    vertical-align: top;
+    font-size: small;
+}
+table .username::before {
+    content: "@";
+}
+.btn-sign-out {
+    display: block;
+    width: max-content;
+    background-color: #f75c5c;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 20px
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../img/background-login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center left;
+}
+table{
+    align-items:center;
+}
+.btn { 
+    text-decoration: none;
+    background-color: #e91101;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: large;
+    margin: auto;
+    margin-top: 20px;
+    padding: 6px 12px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+fieldset{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background-color: #ffffff22;
+    padding: 20px;
+    border: 2px solid #ffffff55;
+}
+fieldset h2 {
+    color: #fff;
+}
+fieldset img {
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+}
+fieldset input {
+    display: block;
+    padding: 6px 12px;
+    font-size: large;
+    margin-top: 20px;
+    width: 250px;
+    max-width: 100%;
+    border-radius: 5px;
+    background-color: #ffffff22;
+    border: none;
+    border-bottom: 2px solid #ffffff55;
+    color: #fff;
+    outline: none;
+}
+::placeholder {
+    color: #ffffff55;
+}
+.simple-text {
+    font-size: small;
+    font-weight: unset;
+    color: #fff;
+    margin: 15px auto 0;
+}
+.simple-text a {
+    color: #fff;
+}
+
+.form {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background-color: #ffffff22;
+    padding: 20px;
+    border: 2px solid #ffffff55;
+}

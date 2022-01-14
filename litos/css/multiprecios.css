@@ -1,0 +1,14 @@
+.precios-tabla span {
+    padding: 2px 4px;
+    display: inline-block;
+    background-color: #0275d8;
+    color: #fff;
+    border-radius: 5px;
+    font-size: small;
+    margin: 2.5px;
+    transition: .25s;
+    cursor: pointer;
+}
+.precios-tabla span:before {
+    content: 'S/. ';
+}

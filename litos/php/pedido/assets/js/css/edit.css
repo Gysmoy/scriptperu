@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+:root {
+    --rojo: #ff3b3b;
+    --verde: #06c270;
+    --azul: #6698ff;
+    --amarillo: yellow;
+    --naranja: #ff8601;
+    --celeste: #3498DB;
+    --rosa: #ff5c5c;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --gris: #555770;
+}
+
+/* Scrollbar Personalizado */
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--azul);
+    border-radius: 4px;
+}
+/* Scrollbar Personalizado */
+
+/* Generales */
+button, select {
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Inicio de Login */
+#login {
+    position: relative;
+    background: linear-gradient(to bottom, var(--azul) 50%, #ebebf0 50%);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50vh;
+    z-index: 0;
+}
+#login form {
+    position: relative;
+    max-width: 1024px;
+    margin: auto;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    background-color: var(--blanco);
+    padding: 20px;
+    width: min-content;
+    box-shadow: 0 0 5px var(--gris);
+}
+#login form img {
+    width: 100px;
+}
+#login form h2 {
+    color: var(--gris);
+    margin: 20px 0;
+    width: max-content;
+}
+#login form p {
+    color: var(--gris);
+    width: max-content;
+    margin-bottom: 20px;
+}
+#login form input {
+    font-size: medium;
+    border: none;
+    margin: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    border-bottom: 2px solid #ebebf0;
+    transition: 0.3s;
+}
+#login form input:focus {
+    border-bottom: 2px solid var(--gris);
+}
+::placeholder {
+    color: var(--gris);
+}
+#login form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--azul);
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    color: var(--blanco);
+    font-weight: bolder;
+    cursor: pointer;
+}
+@media (max-width: 720px) {
+    #login form {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        padding-top: 100px;
+    }
+}
+/* Fin de Login */
+
+/* Centro de edición */
+#edit {
+    position: relative;
+    z-index: 0;
+}
+#edit header {
+    background-color: var(--azul);
+    padding: 20px;
+    box-shadow: 0 0 10px var(--azul);
+}
+#edit header h2 {
+    color: var(--blanco);
+    text-align: center;
+}
+#edit header a {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--rojo);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--blanco);
+    text-decoration: none;
+    box-shadow: 0 0 10px var(--gris);
+}
+#edit main {
+    padding: 20px;
+    max-width: 1024px;
+    margin: auto;
+    height: 100%;
+}
+#edit main .btn {
+    padding: 10px 20px;
+    width: 100%;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid var(--azul);
+    background-color: var(--azul);
+    color: var(--blanco);
+    margin: 5px auto;
+}
+#edit main div {
+    overflow-x: scroll;
+}
+#edit main div table {
+    width: calc(100%);
+}
+#edit main div table thead tr td {
+    padding: 5px 10px;
+    text-align: center;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-radius: 5px;
+}
+#edit main div table tbody tr td {
+    padding: 5px 10px;
+}
+#edit main div table tbody tr td img {
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 5px;
+    box-shadow: 2.5px 2.5px 5px var(--gris);
+    image-rendering: optimizeSpeed;
+}
+#edit main div table tbody tr td button {
+    cursor: pointer;
+    margin: 2.5px;
+    padding: 5px 10px;
+    font-size: medium;
+    border-radius: 5px;
+    border: 1px solid var(--verde);
+    background-color: var(--blanco);
+    color: var(--verde);
+    transition: 0.3s;
+}
+#edit main div table tbody tr td button:hover {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+#edit main div table tbody tr td .delete {
+    background-color: var(--blanco);
+    color: var(--rojo);
+    border: 1px solid var(--rojo);
+}
+#edit main div table tbody tr td .delete:hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
+/* Ocultar los divs */
+#chifa, #burguer, #bebidas {
+    display: none;
+}
+@media(max-width: 720px) {
+    #edit header h2 {
+        text-align: left;
+    }
+    #edit main {
+        padding: 10px;
+    }
+}
+
+/* Frame edit */
+#frame-edit {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    padding: 50vh 20px 0;
+}
+#frame-edit button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    border: 1px solid var(--rojo);
+    border-radius: 5px;
+    font-size: medium;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    box-shadow: 0 0 5px var(--gris);
+    z-index: 999;
+}
+#form-edit {
+    background-color: var(--blanco);
+    position: relative;
+    transform: translateY(-50%);
+    padding: 20px;
+    margin: auto;
+    width: max-content;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--gris);
+}
+#form-edit h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--verde);
+}
+#form-edit img {
+    border: none;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 5px;
+    box-shadow: 2.5px 2.5px 5px var(--gris);
+    image-rendering: optimizeSpeed;
+}
+#form-edit input, #form-edit textarea {
+    margin-top: 20px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-size: medium;
+    border: 2px solid #8f90a6;
+    border-radius: 5px;
+    width: 100%;
+}
+#form-edit input:focus, #form-edit textarea:focus {
+    border: 2px solid var(--verde);
+    box-shadow: 0 0 2px var(--verde);
+}
+#form-edit input[type="submit"] {
+    border-color: var(--verde);
+    background-color: var(--verde);
+    color: var(--blanco);
+    cursor: pointer;
+}
+@media(max-width: 720px) {
+    #frame-edit {
+        position: fixed;
+        padding: 5px;
+        overflow-y: scroll;
+    }
+    #form-edit {
+        transform: none;
+        width: 100%;
+        overflow-y: scroll;
+    }
+}

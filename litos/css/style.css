@@ -1,0 +1,58 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("../img/central2.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    text-align: center;
+}
+form {
+    opacity: 0.9;
+    width: auto;
+    text-align: center;
+    margin: 100px auto;
+    background-color: white;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+input {
+    border: none;
+	border-bottom: 1px solid rgb(0, 0, 0);
+	background: transparent;
+	outline: none;
+	color: #000;
+    height: 40px;
+	font-size: 65%;
+}
+
+label {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    color: blanchedalmond;
+    font-weight: 700;
+    background-color: #474544;
+    border-radius: 10px;
+}
+
+h3 {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
